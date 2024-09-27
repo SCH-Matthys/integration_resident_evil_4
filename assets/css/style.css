@@ -1,0 +1,387 @@
+@font-face {
+    font-family: roboto;
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: roboto;
+}
+/* HEADER /////////////////////////////////////////////////////////////////*/
+/* NAVBAR /////////////////////////////////////////////////////////////////*/
+#navbar{
+    padding: 48px;
+}
+#navbar ul{
+    display: flex;
+    justify-content: center;
+}
+#navbar li{
+    padding: 0px 32px;
+    border-right: solid 2px black;
+}
+#navbar li:last-child{
+    border-right: none;
+}
+#navbar a{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
+#navbar a:hover{
+    color: #C0192A;
+    transition: ease-out 0.2s;
+}
+/* BANNER /////////////////////////////////////////////////////////////////*/
+#banner{
+    background-image: url(../img/banner.jpg);
+    padding: 96px;
+}
+#banner>div{
+    background-image: url(../img/Resident_Evil_4_Logo_Light_Outlined.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+}
+#banner p{
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 48px;
+    padding: 32px;
+}
+/* MAIN /////////////////////////////////////////////////////////////////*/
+/* MORE /////////////////////////////////////////////////////////////////*/
+#more{
+    padding: 64px 64px 128px;
+    text-align: center;
+}
+h2{
+    text-transform: uppercase;
+    font-size: 32px;
+    padding: 32px 0px;
+    text-align: center;
+}
+#more p{
+    padding: 0px 15% 48px;
+    font-size: 24px;
+}
+/* ACTUS /////////////////////////////////////////////////////////////*/
+#actus{
+    padding: 96px 128px 196px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+#actus::before{
+    content: "actualités";
+    text-transform: uppercase;
+    font-size: 32px;
+    font-weight: bold;
+    position: absolute;
+    top: 16px;
+}
+#actus article{
+    width: 20vw;
+    background-color: #282725;
+    color: white;
+    margin: 0px 32px;
+}
+article:hover{
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0px 8px 16px 6px rgba(0, 0, 0, 0.459);
+    transition: all 0.2s;
+}
+article>div{
+    width: 100%;
+    height: 250px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+article h3{
+    font-size: 24px;
+    padding: 48px 16px;
+}
+article p{
+    font-size: 24px;
+    padding: 0px 16px 96px;
+}
+#art-1>div{
+    background-image: url(../img/new-monsters.jpg);
+}
+#art-2>div{
+    background-image: url(../img/new-graphism.jpg);
+}
+#art-3>div{
+    background-image: url(../img/new-gameplay.jpeg);
+}
+/* NEWSLETTER //////////////////////////////////////////////////////*/
+#newsletter{
+    background-color: #292B2C;
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 48px;
+}
+#newsletter h2{
+    width: 100%;
+    padding: 16px 0px;
+}
+#newsletter input{
+    font-size: 16px;
+    padding: 8px 42px;
+    border-radius: 8px;
+}
+#newsletter button{
+    font-size: 16px;
+}
+/* FOOTER ///////////////////////////////////////////////////////////////*/
+footer{
+    background-color: black;
+    color: white;
+    padding: 16px 192px;
+}
+#nav-footer>div{
+    background-image: url(../img/Resident_Evil_4_Logo_Light_Outlined.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 50px;
+}
+#nav-footer{
+    display: flex;
+    justify-content: space-between;
+}
+#nav-footer ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#nav-footer li{
+    padding: 0px 32px;
+    border-right: solid 1px white;
+}
+#nav-footer li:last-child{
+    border-right: none;
+}
+#nav-footer a{
+    text-transform:capitalize;
+    color: white;
+    transition: ease-out 0.2s;
+}
+#nav-footer a:hover{
+    color: #C0192A;
+    transition: ease-out 0.2s;
+}
+/* BUTTONS /////////////////////////////////////////////////////////////*/
+.btn{
+    font-size: 24px;
+    padding: 8px 42px;
+    border: solid 1px rgba(255, 255, 255, 0);
+    border-radius: 4px;
+}
+.btn-rouge{
+    background-color: #C0192A;
+    color: white;
+}
+.btn-rouge:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #C0192A;
+    transition: all 0.2s;
+    border: solid 1px #C0192A;
+}
+.btn-lightred{
+    background-color: #C0192A;
+    color: white;
+}
+.btn-lightred:hover{
+    cursor: pointer;
+    background-color: white;
+    color: #C0192A;
+    transition: all 0.2s;
+    border: solid 1px #C0192A;
+}
+
+/* MEDIA QUARRY///////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1300px) {
+    /* ACTUALITES ////////////////////////////////////////////////////////// */
+    #actus{
+        padding: 96px 128px 196px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        position: relative;
+    }
+    #actus article{
+        width: 30vw;
+        margin: 32px;
+    }
+    article>div{
+        height: 300px;
+    }
+    /* FOOTER ///////////////////////////////////////////////////////////// */
+    #nav-footer{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #nav-footer div{
+        padding-bottom: 16px;
+    }
+    #nav-footer li{
+        text-align: center;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 1000px){
+    #actus article{
+        width: 60vw;
+    }
+    article>div{
+        height: 400px;
+    }
+}
+/* ///////////////////////////////////////////////////////////////////////////////// */
+@media screen and (max-width: 700px){
+    #navbar ul{
+        align-items: center;
+        flex-direction: column;
+    }
+    #navbar li{
+        padding: 8px 32px;
+        border: none;
+    }
+    article>div{
+        height: 400px;
+    }
+    /* BANNER /////////////////////////////////////////////////////////////////*/
+    #navbar{
+        padding: 8px;
+    }
+    #banner{
+        padding: 32px;
+    }
+    #banner>div{
+        width: 100%;
+        height: 250px;
+    }
+    #banner p{
+        font-size: 32px;
+        padding: 16px;
+    }
+    /* MAIN /////////////////////////////////////////////////////////////////*/
+    /* MORE /////////////////////////////////////////////////////////////////*/
+    #more{
+        padding: 32px 32px 64px;
+    }
+    h2{
+        font-size: 24px;
+        padding: 16px 0px;
+    }
+    #more p{
+        padding: 0px 6% 48px;
+        font-size: 20px;
+    }/* ACTUS /////////////////////////////////////////////////////////////*/
+    #actus{
+        padding: 96px 10% 128px;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    #actus::before{
+        font-size: 24px;
+        top: 8px;
+    }
+    #actus article{
+        width: 70vw;
+        margin: 16px;
+    }
+    article>div{
+        height: 250px;
+    }
+    article h3{
+        font-size: 20px;
+        padding: 26px 16px;
+    }
+    article p{
+        font-size: 16px;
+        padding: 0px 16px 64px;
+    }
+    /* FOOTER ///////////////////////////////////////////////////////////////*/
+    #nav-footer>div{
+        background-image: url(../img/Resident_Evil_4_Logo_Light_Outlined.png);
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 200px;
+        height: 50px;
+    }
+    #nav-footer ul{
+        flex-direction: column;
+    }
+    #nav-footer li{
+        padding: 8px 32px;
+        border: none;
+    }
+    #nav-footer li:last-child{
+        border-right: none;
+    }
+    #nav-footer a{
+        text-transform:capitalize;
+        color: white;
+        transition: ease-out 0.2s;
+    }
+    #nav-footer a:hover{
+        color: #C0192A;
+        transition: ease-out 0.2s;
+    }
+}
+
+@media screen and (max-width:550px) {
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    button{
+        margin-top: 8px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    #actus{
+        padding: 64px 8% 92px;
+    }
+    article{
+        margin: 0px 8px;
+    }
+    #newsletter{
+        padding: 16px;
+    }
+    #newsletter h2{
+        font-size: 18px;
+    }
+    input{
+        width: 80%;
+        padding: none;
+        font-size: 16px;
+        text-align: center;
+    }
+    input::placeholder{
+        font-size: 8px;
+    }
+}
